@@ -1,0 +1,694 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/********** PÁGINA INICIO **********/
+
+/* Header */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    background-color: rgba(255, 255, 255, 0.895);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+div nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header div nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav li a {
+    color:rgb(28, 67, 134);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 175%;
+    background-color: transparent;
+    text-align: right;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btncita a {
+    background-color: rgb(124, 110, 169);
+    color: white;
+}
+
+.fondo {
+    background-image: url(./imagenes/principal.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+/* Tratamientos INICIO */
+
+.trata_inicio h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
+    color: rgb(34 188 191);
+    text-align: center;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+.trata_clin_este{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    padding: 3px;
+}
+
+.imagen_c_e{
+    display: flex;
+    justify-content: center;
+}
+
+.esteticos{
+    width: 600px;
+    height: auto;
+}
+
+.clinicos{
+    width: 600px;
+    height: auto;
+}
+
+.esteticos h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color: rgb(45, 43, 43);
+    text-align: center;
+    padding: 10px;
+}
+
+.esteticos p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    margin: 1px;
+    padding-bottom: 20px;
+}
+
+
+.clinicos h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color: rgb(45, 43, 43);
+    text-align: center;
+    padding: 10px;
+}
+
+.clinicos p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    margin: 1px;
+    padding-bottom: 20px;
+}
+
+.btn_conoce_trata a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    text-decoration: none;
+    color: rgb(34 188 191);
+    margin: 3px;
+}
+
+.btn_conoce_trata{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+/* Comprometidos con nuestros pacientes INICIO */
+
+.comprometidos{
+    background-color: rgb(34 188 191);
+    width: 100%;
+    height: 750px;
+    border-radius: 25% 10%;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.comprometidos h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* Sonrisas DentaLook INICIO */
+
+.testimonios h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
+    color: rgb(34 188 191);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.testimonios p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 250%;
+    color: rgb(124, 110, 169);
+}
+
+.div_paciente{
+    display: grid;
+    grid-template-columns: repeat(2,.5fr);
+    grid-template-rows: repeat(2,.5fr);
+    grid-template-areas: 
+    "pac1 ."
+    ". pac2";
+}
+
+
+.paciente1{
+    grid-area: pac1;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(124, 110, 169);
+}
+
+
+.paciente2{
+    grid-area: pac2;
+    text-align: right;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Clínicas INICIO */
+
+.clinicas{
+    background-color: rgb(34 188 191);
+    width: 100%;
+    height: 750px;
+    border-radius: 10% / 50%;
+}
+
+.direccion{
+    display: flex;
+    justify-content: center;
+}
+.clinicas h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.primavera h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.sauces h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.clinicas p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    color: rgb(44, 47, 50);
+    padding-top: 10px;
+}
+
+.direccion iframe{
+    margin-left: 25px;
+    margin-left: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Footer */
+
+.pie_pagina{
+    background-color: rgb(44 131 200);
+    width: 100%;
+    height: 150px;
+}
+
+.pie_pagina p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.redes{
+    text-align: center;
+}
+
+/********** PÁGINA TRATAMIENTOS **********/
+
+.tratamientos_dentales{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
+    color: rgb(34 188 191);
+}
+
+.titulo_tratamientos{
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+
+}
+.div_principal_trata li{
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.div_principal_trata{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.div_principal_trata img{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/********** PÁGINA NOSOTROS **********/
+
+/*Nosotros*/
+
+.nosotros p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100px;
+    color: rgb(34 188 191);
+    text-align: center;
+    padding-top: 35px;
+}
+
+.texto_nosotros p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.mis_vis{
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,.5fr);
+    grid-template-rows: repeat(2,.5fr);
+    grid-template-areas: 
+    "mis ."
+    ". vis";
+}
+
+.mision{
+    font-size: 200%;
+    grid-area: mis;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(124, 110, 169);
+}
+
+.vision{
+    font-size: 200%;
+    grid-area: vis;
+    text-align: right;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(124, 110, 169);
+}
+
+.mis_titulo{
+    font-size: 200%;
+}
+
+.vis_titulo{
+    font-size: 200%;
+}
+
+/*Especilistas*/
+.conoce_titulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 80px;
+    color: rgb(34 188 191);
+    text-align: center;
+    padding-top: 35px;
+}
+.doctores{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;  
+}
+.img_doc{
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: auto;
+}
+
+
+.marisol{
+    width: 590px;
+    height: auto;
+    justify-content: center;
+}
+
+.eric{
+    width: 590px;
+    height: auto;
+    justify-content: center;
+}
+
+.cv_doctor1 h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color:  rgb(34 188 191);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cv_doctor1 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    padding-bottom: 20px;
+}
+
+.cv_doctor2 h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color:  rgb(34 188 191);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cv_doctor2 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    padding-bottom: 20px;
+}
+
+
+
+/********** PÁGINA AGENDA **********/
+
+.agenda_cita{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(34 188 191);
+    width: 100%;
+    height: 500px;
+    border-radius: 25% 10%;
+}
+
+.titulo_agenda{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 350%;
+    color: rgb(34 188 191);
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.paciente_nuevo h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.paciente_dentalook h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.paciente_nuevo ul li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    list-style: none;
+}
+
+.paciente_dentalook ul li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    list-style: none;
+}
+
+
+/***********MEDIA QUERIES************/
+
+/***********TABLET************/
+
+@media only screen and (max-width: 768px){
+
+    /*General*/
+
+    nav img{
+        width: 200px;
+        height: 38px;
+    }
+
+    nav li a{
+        font-size: 150%;
+    }
+
+    /*INDEX Tratamientos Dentales*/
+
+    .trata_clin_este{
+        flex-direction: column;
+        align-items: center;
+    }
+
+     /*INDEX Comprometidos con nuestros pacientes*/
+
+     .comprometidos{
+        height: 650px;
+    }
+     .comprometidos iframe{
+        width: 700px;
+        height: 350px;
+     }
+    
+     .comprometidos h2{
+        padding-top: 45px;
+        padding-bottom: 20px;
+     }
+
+    /*INDEX Clinicas*/
+    .direccion{
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .clinicas{
+        height: 1110px;
+    }
+
+    .direccion iframe{
+        width: 700px;
+        height: 350px;
+     }
+
+     .sauces h3{
+        padding-top: 30px;
+     }
+
+     /*TRATAMIENTOS*/
+
+     .div_principal_trata{
+        grid-template-columns: repeat(2,1fr);
+        grid-row: repeat(5,1fr);
+    }
+
+    /*NOSOTROS*/
+
+    .doctores{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .eric{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+
+/***********CEL************/
+
+@media only screen and (max-width: 576px){
+
+
+    /*General*/
+
+    header nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*INDEX Tratamientos Dentales*/
+
+    .trata_clin_este img{
+        width: auto;
+        height: 300px;  
+    }
+
+
+     /*INDEX Comprometidos con nuestros pacientes*/
+
+     .comprometidos{
+        height: 550px;
+    }
+     .comprometidos iframe{
+        width: 500px;
+        height: 300px;
+     }
+    
+
+     /*INDEX Testimonios*/
+
+     .div_paciente{
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .testimonios p{
+        font-size:180%;
+    }
+
+
+     /*INDEX Clinicas*/
+
+     .clinicas{
+        height: 1000px;
+    }
+
+     .direccion iframe{
+        width: 500px;
+        height: 300px;
+     }
+
+
+    /*TRATAMIENTOS*/
+
+    .div_principal_trata{
+        grid-template-columns: repeat(1,1fr);
+        grid-row: repeat(10,1fr);
+    }
+
+   /*NOSOTROS*/
+
+
+   .mis_vis{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 80%;
+    }
+
+    .nosotros p{
+        padding-top: 45px;
+    }
+
+    .texto_nosotros{
+        font-size: 75%;
+    }
+
+    .conoce_titulo{
+        font-size: 300%;
+    }
+
+    .cv_doctor1{
+        width: 550px;
+        height: auto;
+        text-align: center;
+    }
+
+    .cv_doctor2{
+        width: 550px;
+        height: auto;
+        text-align: center;
+    }
+
+
+    .doctores p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*AGENDA*/
+    .titulo_agenda{
+        padding-top: 65px;
+    }
+    .agenda_cita{
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+    }
+
+
+}

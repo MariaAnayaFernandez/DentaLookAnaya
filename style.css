@@ -145,15 +145,23 @@ nav li a:hover{
 
 .btn_conoce_trata a{
     font-family: 'Quicksand', sans-serif;
-    font-size: 150%;
+    font-size: 280%;
     text-decoration: none;
     color: rgb(34 188 191);
-    margin: 3px;
+    margin: 20px;
+}
+
+.btn_conoce_trata a:hover{
+    color: rgb(124, 110, 169);
 }
 
 .btn_conoce_trata{
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.btn_conoce_trata:hover{
+    transform: scale(1.03);
 }
 
 
@@ -312,7 +320,7 @@ nav li a:hover{
     padding-top: 35px;
 
 }
-.div_principal_trata li{
+.div_principal_trata p{
     list-style: none;
     font-family: 'Raleway', sans-serif;
     font-size: 150%;

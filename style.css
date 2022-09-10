@@ -197,8 +197,15 @@ nav li a {
     grid-area: pac1;
     text-align: left;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     color: rgb(124, 110, 169);
+}
+
+.paciente1 p{
+        animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
 }
 
 
@@ -206,7 +213,7 @@ nav li a {
     grid-area: pac2;
     text-align: right;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 /* Clínicas INICIO */

@@ -37,11 +37,8 @@ header div nav{
 
 
 nav li a {
-<<<<<<< HEAD
     color:rgb(124, 110, 169);
-=======
     color:rgb(35, 114, 189);
->>>>>>> rama1
     font-family: 'Quicksand', sans-serif;
     font-size: 175%;
     background-color: transparent;
@@ -58,10 +55,7 @@ nav li a:hover{
     transform: scale(1.05);
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> rama1
 .btncita a {
     background-color: rgb(35, 114, 189);
     color: white;
@@ -159,24 +153,14 @@ nav li a:hover{
 
 .btn_conoce_trata a{
     font-family: 'Quicksand', sans-serif;
-<<<<<<< HEAD
-    font-size: 280%;
-    text-decoration: none;
-    color: rgb(34 188 191);
-=======
     font-size: 220%;
     text-decoration: none;
     color: rgba(35,114,189,1);
->>>>>>> rama1
     margin: 20px;
 }
 
 .btn_conoce_trata a:hover{
-<<<<<<< HEAD
-    color: rgb(124, 110, 169);
-=======
     color: rgb(34, 188, 191);
->>>>>>> rama1
 }
 
 .btn_conoce_trata{

@@ -37,7 +37,7 @@ header div nav{
 
 
 nav li a {
-    color:rgb(28, 67, 134);
+    color:rgb(35, 114, 189);
     font-family: 'Quicksand', sans-serif;
     font-size: 175%;
     background-color: transparent;
@@ -49,8 +49,20 @@ nav li a {
     padding-right: 10px;
 }
 
+nav li a:hover{
+    color: rgb(34 188 191);
+    transform: scale(1.05);
+}
+
 .btncita a {
-    background-color: rgb(124, 110, 169);
+    background-color: rgb(35, 114, 189);
+    color: white;
+}
+
+.btncita a:hover{
+    transform: scale(1.05);
+    transition: all .5s;
+    background-color: rgb(34 188 191);
     color: white;
 }
 
@@ -132,15 +144,23 @@ nav li a {
 
 .btn_conoce_trata a{
     font-family: 'Quicksand', sans-serif;
-    font-size: 150%;
+    font-size: 220%;
     text-decoration: none;
-    color: rgb(34 188 191);
-    margin: 3px;
+    color: rgba(35,114,189,1);
+    margin: 20px;
+}
+
+.btn_conoce_trata a:hover{
+    color: rgb(34, 188, 191);
 }
 
 .btn_conoce_trata{
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.btn_conoce_trata:hover{
+    transform: scale(1.03);
 }
 
 
@@ -148,14 +168,16 @@ nav li a {
 /* Comprometidos con nuestros pacientes INICIO */
 
 .comprometidos{
-    background-color: rgb(34 188 191);
+    background: rgb(35,114,189);
+    background: radial-gradient(circle, rgba(35,114,189,1) 0%, rgba(34,188,191,1) 100%);
     width: 100%;
-    height: 750px;
-    border-radius: 25% 10%;
+    height: 850px;
 }
+
 .video{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .comprometidos h2{
@@ -163,7 +185,7 @@ nav li a {
     font-size: 300%;
     color: white;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 10px;
 }
 
@@ -180,7 +202,8 @@ nav li a {
 .testimonios p{
     font-family: 'Raleway', sans-serif;
     font-size: 250%;
-    color: rgb(124, 110, 169);
+    color: black;
+    padding-top: 20px;
 }
 
 .div_paciente{
@@ -197,32 +220,55 @@ nav li a {
     grid-area: pac1;
     text-align: left;
     margin: 10px;
-    padding: 20px;
-    color: rgb(124, 110, 169);
+    padding: 10px;
 }
 
 .paciente1 p{
-        animation-duration: 3s;
-        animation-name: slidein;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; 
+    animation-duration: 3s;
+    animation-name: bounce;
 }
 
+@keyframes bounce{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
 
 .paciente2{
     grid-area: pac2;
     text-align: right;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
+}
+
+.paciente2 p{
+    animation-duration: 3s;
+    animation-name: bounce1;
+}
+
+@keyframes bounce1{
+    from{
+        margin-left: -100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+      }
 }
 
 /* Clínicas INICIO */
 
 .clinicas{
-    background-color: rgb(34 188 191);
+    background: rgb(34,188,191);
+    background: linear-gradient(0deg, rgba(34,188,191,1) 0%, rgba(35,114,189,1) 100%);
     width: 100%;
     height: 750px;
-    border-radius: 10% / 50%;
 }
 
 .direccion{
@@ -269,19 +315,36 @@ nav li a {
     padding-right: 25px;
 }
 
+.direccion{
+    animation-duration: 3s;
+    animation-name: fall;
+
+}
+
+@keyframes fall{
+from{
+    margin-top: -20%;
+    width: 100%;
+}
+to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
 /* Footer */
 
 .pie_pagina{
-    background-color: rgb(44 131 200);
+    background: rgb(35,114,189);
+    background: linear-gradient(0deg, rgba(35,114,189,1) 0%, rgba(34,188,191,1) 100%);
     width: 100%;
-    height: 150px;
+    height: 250px;
 }
 
 .pie_pagina p{
     font-family: 'Raleway', sans-serif;
     font-size: 150%;
     text-align: center;
-    margin: 20px;
     padding: 20px;
     color: white;
 }
@@ -351,6 +414,8 @@ nav li a {
 }
 
 .mis_vis{
+    background: rgb(35,114,189);
+    background: radial-gradient(circle, rgba(35,114,189,1) 0%, rgba(34,188,191,1) 100%);
     font-family: 'Raleway', sans-serif;
     display: grid;
     grid-template-columns: repeat(2,.5fr);
@@ -364,18 +429,50 @@ nav li a {
     font-size: 200%;
     grid-area: mis;
     text-align: left;
-    margin: 10px;
-    padding: 10px;
-    color: rgb(124, 110, 169);
+    margin: 30px;
+    padding-top: 30px;
+    color: white;
+}
+
+.mision p{
+    animation-duration: 3s;
+    animation-name: bounce;
+}
+
+@keyframes bounce{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+      }
 }
 
 .vision{
     font-size: 200%;
     grid-area: vis;
     text-align: right;
-    margin: 10px;
-    padding: 10px;
-    color: rgb(124, 110, 169);
+    margin: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.vision p{
+    animation-duration: 3s;
+    animation-name: bounce1;
+}
+
+@keyframes bounce1{
+    from{
+        margin-left: -100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+      }
 }
 
 .mis_titulo{
@@ -455,10 +552,10 @@ nav li a {
 .agenda_cita{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(34 188 191);
+    background: rgb(34,188,191);
+    background: linear-gradient(0deg, rgba(34,188,191,1) 0%, rgba(35,114,189,1) 100%);
     width: 100%;
-    height: 500px;
-    border-radius: 25% 10%;
+    height: 550px;
 }
 
 .titulo_agenda{
@@ -466,7 +563,7 @@ nav li a {
     font-size: 350%;
     color: rgb(34 188 191);
     text-align: center;
-    padding-top: 45px;
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 

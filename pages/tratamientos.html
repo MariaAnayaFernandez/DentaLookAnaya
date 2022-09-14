@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imagenes/favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>DentaLook</title>
 </head>
+
 <body>
 
     <!--navegador-->
     <header>
-        <div class="menu">
-            <nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid menu">
                 <a href="../index.html"><img src="../imagenes/logo.png" alt="logo"><a href="../index.html"></a>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="tratamientos.html">Tratamientos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li class="btncita"><a href="agenda.html">¡Agenda tu cita!</a></li>
-                </ul>
-            </nav>
-        </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu-div" id="navbarNav">
+                    <ul class="navbar-modi">
+                        <li class="nav-item menu-li">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item menu-li">
+                            <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+                        </li>
+                        <li class="nav-item menu-li">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item menu-li botoncita">
+                            <a class="nav-link" href="agenda.html">¡Agenda tu Cita!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
 
@@ -35,64 +53,131 @@
         <div class="tratamientos_dentales">
             <h1 class="titulo_tratamientos">Tratamientos Dentales</h1>
         </div>
+
+
         <div>
-            <div clas="lista_tratamientos">
                 <div class="div_principal_trata">
-                    <div class="lip">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Limpieza dental</p>
+
+                    <div class="tarjeta_info";>
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Limpieza Dental</h5>
+                          <p class="card-text texto-tarjeta">La limpieza dental, también llamada profilaxis dental, se hace para eliminar la placa y el cálculo (sarro) que se acumula en los dientes durante el paso del tiempo. Este procedimiento lo realizamos con un aparato de ultrasonidos, el cual tiene una punta fina que entra en vibración cuando toca un objeto duro, en este caso el diente o el sarro. Esta vibración consigue el desprendimiento de las placas de sarro y la eliminación de manchas extrínsecas, es decir, las producidas por tabaco, café, etc.</p>
+                        </div>
                     </div>
-                    <div class="Endo">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Endodoncia</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Endodoncia</h5>
+                          <p class="card-text texto-tarjeta">Este procedimiento, comúnmente conocido como matar el nervio, consiste en extirpar total o parcialmente la pulpa dental afectada. Dejando el conducto reticular o raíz, limpia y libre de bacterias.</p>
+                        </div>
                     </div>
-                    <div class="orto">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Ortodoncia</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Ortodoncia</h5>
+                          <p class="card-text texto-tarjeta">Ortodoncia es una especialidad de la odontología que se encarga de la corrección de los dientes y huesos posicionados incorrectamente. Los dientes en mala posición y los que no muerden correctamente unos contra otro son difíciles de mantener limpios, corren riesgos de pérdida precoz debido a caries y enfermedades periodontales</p>
+                        </div>
                     </div>
-                    <div class="pedia">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Odontopediatría</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Odontopediatría</h5>
+                          <p class="card-text texto-tarjeta">La Odontopediatría es la especialidad de la Odontología que se enfoca en atender pacientes desde su nacimiento hasta la edad adulta.</p>
+                        </div>
                     </div>
-                    <div class="implante">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Implantes</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Implantes</h5>
+                          <p class="card-text texto-tarjeta">La cirugía de implantes dentales es un procedimiento que reemplaza las raíces de los dientes con pernos metálicos que parecen tornillos y reemplaza el diente faltante, o dañado, con un diente artificial que tiene el mismo aspecto y que cumple la misma función que los dientes reales.</p>
+                        </div>
                     </div>
-                    <div class="coronas">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Coronas</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Coronas</h5>
+                          <p class="card-text texto-tarjeta">Una corona dental o "funda" es una cubierta que se ajusta sobre un diente dañado, deteriorado o poco atractivo. Puede incluso reemplazar un diente por completo como parte de la construcción de un puente dental.</p>
+                        </div>
                     </div>
-                    <div class="amalgama">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Amalgamas</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Resinas</h5>
+                          <p class="card-text texto-tarjeta">La resina dental se utiliza para reemplazar una parte cariada o ausente de su estructura. Está compuesta de materiales de restauración del mismo color del diente. Su apariencia estética es la principal ventaja sobre otros materiales de relleno como es la amalgama de plata convencional.</p>
+                        </div>
                     </div>
-                    <div class="resina">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Resinas</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Prótesis</h5>
+                          <p class="card-text texto-tarjeta">La prótesis (dentadura) dental parcial extraíble generalmente consiste de los dientes postizos sujetados a una base de plástico del color rosado de las encías. Una dentadura parcial puede tener un conector mayor o armadura o estructura metal que se alinean con sus dientes, o pueden tener otros conectores menores que son de un aspecto más natural.</p>
+                        </div>
                     </div>
-                    <div class="prote">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Prótesis</p>
+
+                    <div class="tarjeta_info">
+                        <img src="../imagenes/Relleno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-tarjeta">Extracciones</h5>
+                          <p class="card-text texto-tarjeta">Cuando no es posible restaurar un diente porque está infectado, dañado o hay una erosión severa, el mejor tratamiento es, en muchas ocasiones, la extracción. Una extracción es el acto de sacar un diente de su cavidad.</p>
+                        </div>
                     </div>
-                    <div class="extra">
-                        <img src="../imagenes/Relleno.jpg" alt="Imagen de relleno">
-                        <p>Extracciones</p>
-                    </div>
+
+        
                 </div>
-            </div>
         </div>
 
     </section>
 
+ <!-------footer------->
+ <footer>
+    <div class="footer_general">
+        <div class="container_footer">
 
-    <!--footer-->
-    <footer class="pie_pagina">
-        <p>Síguenos en nuestras redes sociales:</p>
-        <div class="redes">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <div class="box_footer">
+                <h2>Menú</h2>
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="agenda.html">¡Agenda tu Cita!</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>¡Contáctanos!</h2>
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+                <p><i class="bi bi-telephone"></i> Tel: +52 56424471</p>
+                <p><i class="bi bi-envelope"></i> info@dentalook.com.mx</p>
+            </div>
+
+            <div class ="box_footer">
+                <div class="logo_footer">
+                    <img src="../imagenes/logo.png" alt="logo dentalook">
+                </div>
+
+                <div class="texto_footer">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum aliquid deleniti ipsam eos autem commodi recusandae hic temporibus. Incidunt, accusantium tempora! Quia mollitia debitis sint quis consequuntur assumenda eos.
+                    </p>
+                </div>
+            </div>
         </div>
-    </footer>
 
+         <div class="box_copy">
+            <hr>
+            <p>Todos los derechos reservados 2022 | DentaLook</p>
+        </div>
+
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

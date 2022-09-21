@@ -1,0 +1,117 @@
+section{
+    .nosotros p{
+        font-family: 'Quicksand', sans-serif;
+        font-size: nth($font-size , 1 );
+        color: $bg-lightblue;
+        text-align: center;
+        padding-top: nth($padding-size , 5 );
+    }
+
+
+    .texto_nosotros p {
+        font-family: 'Raleway', sans-serif;
+        font-size: nth($font-size , 3 );
+        text-align: center;
+        margin: nth($padding-size , 4 );
+        padding: nth($padding-size , 4 );
+    }
+
+    .mis_vis{
+        background: $bg-darkblue;
+        background: $bg-gradient;
+        font-family: 'Raleway', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(2,.5fr);
+        grid-template-rows: repeat(2,.5fr);
+        grid-template-areas: 
+        "mis ."
+        ". vis";
+
+        .mision, .vision{
+            font-size: nth($font-size , 3 );
+            margin:nth($padding-size , 5 );
+            padding-top: nth($padding-size , 5 );
+            color: $bg-white;
+        }
+
+        .mision{
+            text-align: left;
+            grid-area: mis;
+            p{
+                animation-duration: 3s;
+                animation-name: bounce;
+                @keyframes bounce{
+                    from{
+                        margin-left: 100%;
+                        width: 100%;
+                    }
+                    to {
+                        margin-left: 0%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .vision{
+            text-align: right;
+            grid-area: vis;
+            p{
+                animation-duration: 3s;
+                animation-name: bounce1;
+                @keyframes bounce1{
+                    from{
+                        margin-left: -100%;
+                        width: 100%;
+                    }
+                    to {
+                        margin-left: 0%;
+                        width: 100%;
+                    }
+                }                
+            }
+        }
+
+        .vis_titulo, .mis_titulo{
+            font-size: nth($font-size , 1 );
+        }
+    }
+}
+
+
+
+/*Especilistas*/
+
+
+.conoce_titulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: nth($font-size , 1 );
+    color: $bg-lightblue;
+    text-align: center;
+    padding-top: nth($padding-size , 5 );
+
+}
+
+.doctores-card{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    padding: nth($padding-size , 5 );
+    max-width: 800px;
+    justify-content: center;
+
+    h5{
+        font-family: 'Quicksand', sans-serif;
+        font-size: nth($font-size , 3 );
+        color: $bg-lightblue;
+        padding-top: nth($padding-size , 2 );
+        padding-bottom: nth($padding-size , 2 );
+    }
+
+    p{
+        font-family: 'Raleway', sans-serif;
+        font-size: nth($font-size , 5 );;
+        padding-bottom: nth($padding-size , 2 );
+    }
+}

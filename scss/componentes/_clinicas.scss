@@ -1,0 +1,51 @@
+.clinicas{
+    background: $bg-lightblue;
+    background: $bg-gradient-line;
+    width: 100%;
+    height: 100%;
+
+    h2{
+        font-family: 'Quicksand', sans-serif;
+        font-size: nth($font-size , 1 );
+        color: $bg-white;
+        text-align: center;
+        margin: nth($padding-size , 4 );
+        padding: nth($padding-size , 4 );
+        padding-top: nth($padding-size , 6 );
+    }
+
+    .clinicas-box{
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        animation-duration: 3s;
+        animation-name: fall;
+        @keyframes fall{
+            from{
+                margin-top: -20%;
+                width: 100%;
+            }
+            to {
+                margin-top: 0%;
+                width: 100%;
+              }
+        }
+
+        h5{
+            font-family: 'Quicksand', sans-serif;
+            font-size: nth($font-size , 3 );
+            color: $bg-white;
+            text-align: center;
+            padding: nth($padding-size , 4 );
+        }
+
+        p{
+            font-family: 'Raleway', sans-serif;
+            font-size: nth($font-size , 4 );
+            text-align: center;
+            color: $bg-white;
+        
+        }
+    }
+};

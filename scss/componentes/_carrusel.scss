@@ -1,0 +1,44 @@
+
+.carrusel-principal{
+
+    .fondo1, .fondo2, .fondo3{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .fondo1 {
+        background-image: url(../imagenes/DLimg1.png);
+    }
+    
+    .fondo2 {
+        background-image: url(../imagenes/DLimg2.jpg);
+    }
+    
+    .fondo3 {
+        background-image: url(../imagenes/DLimg3.jpg);
+    }
+    
+    .carrusel-h5{
+        font-family: 'Quicksand', sans-serif;
+        font-size: nth($font-size , 1 );
+        font-weight:bold;
+        color: $bg-lightblue;
+        text-shadow:  1px 1px 2px $bg-white, 0 0 1em$bg-white, 0 0 0.2em $bg-darkblue;
+    }
+    
+    .carrusel-p{
+        font-family: 'Raleway', sans-serif;
+        font-size: nth($font-size , 4 );
+        color: $bg-lightblue;
+        text-shadow: 1px 1px 2px $bg-white, 0 0 1em$bg-white, 0 0 0.2em $bg-darkblue;
+        
+    }
+    
+    .carrusel-flecha{
+        margin-top: nth($padding-size , 9 );
+    }
+
+}

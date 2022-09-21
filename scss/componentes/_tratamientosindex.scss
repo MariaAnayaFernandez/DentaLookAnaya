@@ -1,0 +1,57 @@
+.trata_inicio {
+    h1{
+        font-family: 'Quicksand', sans-serif;
+        font-size: nth($font-size , 1 );
+        color: $bg-lightblue;
+        text-align: center;
+        padding-top: nth($padding-size , 5 );
+        flex-wrap: wrap;
+    }
+
+    .tratamientos-card{
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        padding: nth($padding-size , 5 );
+
+        .esteticos, .clinicos{
+            h5{
+                font-family: 'Quicksand', sans-serif;
+                font-size: nth($font-size , 3 );
+                color: $bg-darkgray;
+                text-align: center;
+                padding: nth($padding-size , 2 );
+            }  
+
+            p{
+                font-family: 'Raleway', sans-serif;
+                font-size: nth($font-size , 4 );
+                text-align: center;
+                color: $bg-darkgray;
+                margin: 1px;
+                padding-bottom: nth($padding-size , 4 );
+            }
+        }    
+    }
+
+    .btn_conoce_trata{
+        text-align: center;
+        padding-bottom: nth($padding-size , 6 );
+        &:hover{
+            transform: scale(1.03);
+        }
+        a{
+            font-family: 'Quicksand', sans-serif;
+            font-size: nth($font-size , 3 );
+            text-decoration: none;
+            color: $bg-darkblue;
+            margin: nth($padding-size , 4 );
+            &:hover{
+                color: $bg-lightblue;
+            }
+        }
+    }
+    
+
+}

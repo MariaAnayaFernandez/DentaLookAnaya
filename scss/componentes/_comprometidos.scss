@@ -1,0 +1,22 @@
+.comprometidos{
+    background: $bg-darkblue;
+    background: $bg-gradient;
+    width: 100%;
+    height: 850px;
+    flex-wrap: wrap;
+
+    h2{
+        font-family: 'Quicksand', sans-serif;
+        font-size: nth($font-size , 1 );
+        color: $bg-white;
+        text-align: center;
+        padding-top: nth($padding-size, 7 );
+        padding-bottom: 10px;
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        padding-top: nth($padding-size , 2 );
+    }
+};

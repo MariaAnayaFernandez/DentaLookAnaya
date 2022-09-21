@@ -1,0 +1,57 @@
+
+.titulo_agenda{
+    font-family: 'Quicksand', sans-serif;
+    font-size: nth($font-size , 1 );
+    color: $bg-lightblue;
+    text-align: center;
+    padding-top: nth($padding-size , 8 );
+    padding-bottom: nth($padding-size , 6 );
+}
+
+
+.agenda_cita{
+    display: flex;
+    justify-content: space-around;
+    background: $bg-lightblue;
+    background: $bg-gradient-line;
+    width: 100%;
+    height: 100%;
+
+    .paciente_nuevo, .paciente_dentalook{
+        h2{
+            font-family: 'Quicksand', sans-serif;
+            font-size: nth($font-size , 3 );
+            color: $bg-white;
+            text-align: center;
+            padding-top: nth($padding-size , 6 );
+        }
+
+        .formato-agenda{
+            padding: nth($padding-size , 5 );
+            margin: nth($padding-size , 5 );
+        }
+
+        .formato-agenda label{
+            font-family: 'Raleway', sans-serif;
+            font-size: nth($font-size , 4 );
+            padding-top: nth($padding-size , 4 );
+            color: $bg-lightgray;
+        }
+        
+        .boton-enviar{
+            font-family: 'Raleway', sans-serif;
+            font-size: nth($font-size , 4 );
+            padding-top: nth($padding-size , 4 );
+            background: $bg-darkblue;
+            padding: nth($padding-size , 2 );
+            border-radius: 5px;
+            color: $bg-white;
+            text-align: center;
+            border-color: $bg-white;
+            &:hover{
+                background: $bg-lightblue;
+            }
+        }
+    }
+};
+

@@ -9,24 +9,23 @@
     }
 
     .div_paciente{
-        display: grid;
-        grid-template-columns: repeat(2,.5fr);
-        grid-template-rows: repeat(2,.5fr);
+        font-family: 'Raleway', sans-serif;
+        @extend %disposicion;
         grid-template-areas: 
         "pac1 ."
         ". pac2";
 
-        .paciente1{
-            grid-area: pac1;
-            text-align: left;
-            margin: nth($padding-size , 2 );
-            padding: nth($padding-size , 2 );
+        .paciente1, .paciente2{
+            font-size: nth($font-size , 3 );
+            margin:nth($padding-size , 5 );
+            padding-top: nth($padding-size , 5 );
+            color: $bg-darkgray;
+        }
 
+        .paciente1{
+            text-align: left;
+            grid-area: pac1;
             p{
-                font-family: 'Raleway', sans-serif;
-                font-size: nth($font-size , 2 );
-                color: $bg-darkgray;
-                padding-top: nth($padding-size , 4 );
                 animation-duration: 3s;
                 animation-name: bounce;
                 @keyframes bounce{
@@ -39,26 +38,15 @@
                         width: 100%;
                       }
                 }
-
-
             }
-
-
         }
 
         .paciente2{
-            grid-area: pac2;
             text-align: right;
-            margin: nth($padding-size , 2 );
-            padding: nth($padding-size , 2 );
+            grid-area: pac2;
             p{
-                font-family: 'Raleway', sans-serif;
-                font-size: nth($font-size , 2 );
-                color: $bg-darkgray;
-                padding-top: nth($padding-size , 4 );
                 animation-duration: 3s;
                 animation-name: bounce1;
-
                 @keyframes bounce1{
                     from{
                         margin-left: -100%;
@@ -72,4 +60,4 @@
             }   
         }
     }
-};
+}

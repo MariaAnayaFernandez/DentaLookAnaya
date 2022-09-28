@@ -23,6 +23,17 @@
         padding-bottom: 20px;
      }
 
+    /*INDEX Sonrisas DentaLook*/
+    
+    .testimonios{
+        .div_paciente{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+
     /*INDEX Clinicas*/
     .clinicas-box iframe{
         height: 300px;
@@ -65,22 +76,6 @@
         width: 300px;
         height: 300px;
      }
-    
-
-     /*INDEX Testimonios*/
-
-     .div_paciente{
-        display: flex;
-        flex-direction: column;
-
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .testimonios p{
-        font-size:180%;
-    }
-
 
      /*INDEX Clinicas*/
 

@@ -20,9 +20,7 @@ section{
         background: $bg-darkblue;
         background: $bg-gradient;
         font-family: 'Raleway', sans-serif;
-        display: grid;
-        grid-template-columns: repeat(2,.5fr);
-        grid-template-rows: repeat(2,.5fr);
+        @extend %disposicion;
         grid-template-areas: 
         "mis ."
         ". vis";

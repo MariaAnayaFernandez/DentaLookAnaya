@@ -1,8 +1,7 @@
 .clinicas{
     background: $bg-lightblue;
     background: $bg-gradient-line;
-    width: 100%;
-    height: 100%;
+
 
     h2{
         font-family: 'Quicksand', sans-serif;
@@ -17,18 +16,16 @@
     .clinicas-box{
         display: flex;
         flex-direction: column;
-        min-width: 0;
+        justify-content: center;
         word-wrap: break-word;
         animation-duration: 3s;
         animation-name: fall;
         @keyframes fall{
             from{
                 margin-top: -20%;
-                width: 100%;
             }
             to {
                 margin-top: 0%;
-                width: 100%;
               }
         }
 

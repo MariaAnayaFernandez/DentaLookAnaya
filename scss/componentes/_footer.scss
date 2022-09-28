@@ -1,7 +1,9 @@
 .footer_general{
-    background: $bg-darkblue;
-    background: $bg-gradient-line1;
-    width: 100%;
+    background: map-get($piedepagina , bg-footer);
+    background: map-get($piedepagina , bg-footer1);
+    width: map-get($piedepagina , width-footer);
+
+
     .container_footer{
         display: flex;
         flex-wrap: wrap;

@@ -540,6 +540,11 @@ section .mis_vis .vis_titulo, section .mis_vis .mis_titulo {
   .tarjeta_info {
     width: 350px;
   }
+  .mis_vis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /*NOSOTROS*/
   .eric {
     display: flex;
